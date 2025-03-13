@@ -1,8 +1,8 @@
-# CZII - CryoET Object Identification
+## CZII - CryoET Object Identification
 
 **Advancing 3D Protein Complex Annotation with Deep Learning**
 
-## Overview
+### Overview
 Cryo-electron tomography (Cryo-ET) enables high-resolution 3D reconstructions of cellular structures, providing critical insights into molecular arrangements.
 
 However, identifying protein complexes remains challenging due to high noise, low contrast, and missing wedge artifacts.
@@ -11,12 +11,12 @@ This project introduces a YOLO-based deep learning model for detecting protein c
 
 We utilize synthetic Cryo-ET data stored in Zarr format, apply preprocessing techniques, and refine detection with k-d tree spatial structures.
 
-## Dataset Description
+### Dataset Description
 The dataset consists of 3D tomograms and their corresponding ground truth annotations. 
 
 The goal is to identify particle centers in tomograms and submit predictions for five scored particle types:
 
-### Particle Types & Difficulty Levels
+#### Particle Types & Difficulty Levels
 
 ✅ Easy: apo-ferritin, ribosome, virus-like-particle
 
@@ -24,7 +24,7 @@ The goal is to identify particle centers in tomograms and submit predictions for
 
 ❌ Not scored: beta-amylase
 
-## Dataset Structure
+### Dataset Structure
 
 Train Data (train/)
 
@@ -42,7 +42,7 @@ Static Tomograms (test/static/ExperimentRuns/{experiment}/VoxelSpacing10.000/)
 
 denoised.zarr/ → Contains tomographic data (without labels)
 
-## Installation
+### Installation
 
 **Install ultralytics (YOLO) Offline**
 
@@ -56,13 +56,13 @@ denoised.zarr/ → Contains tomographic data (without labels)
 
 !cp -r '/kaggle/input/hengck-czii-cryo-et-01/wheel_file' '/kaggle/working/'
 
-# Install asciitree and zarr from local wheels
+## Install asciitree and zarr from local wheels
 
 !pip install /kaggle/working/wheel_file/asciitree-0.3.3/asciitree-0.3.3.whl
 
 !pip install --no-index --find-links=/kaggle/working/wheel_file zarr
 
-## Model Details
+### Model Details
 
 Model: YOLO-based deep learning model
 
@@ -70,7 +70,7 @@ Training Data: Synthetic Cryo-ET dataset (best_synthetic.pt)
 
 Evaluation Metric: Recall-weighted F-beta score (F-beta=4)
 
-## Preprocessing & Post-processing
+### Preprocessing & Post-processing
 **Preprocessing:**
 
 Multi-slice extraction
@@ -81,7 +81,7 @@ Noise reduction
 
 k-d tree spatial structures for refining detection accuracy
 
-## Results
+### Results
 
 High recall and improved localization of protein complexes
 
@@ -92,7 +92,7 @@ Post-processing with k-d trees enhances spatial accuracy
 ![image](https://github.com/user-attachments/assets/f33fad58-7d2c-4a6f-9361-39bfa7ce309f)
 
 
-## Future Work
+### Future Work
 
 Fine-tuning on real Cryo-ET data
 
