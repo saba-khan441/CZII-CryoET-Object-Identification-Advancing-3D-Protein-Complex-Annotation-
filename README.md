@@ -54,8 +54,6 @@ denoised.zarr/ → Contains tomographic data (without labels)
 
 **Install Required Dependencies**
 
-# Copy the wheel files to working directory
-
 !cp -r '/kaggle/input/hengck-czii-cryo-et-01/wheel_file' '/kaggle/working/'
 
 # Install asciitree and zarr from local wheels
