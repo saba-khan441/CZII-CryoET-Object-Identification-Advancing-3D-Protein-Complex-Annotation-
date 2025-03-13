@@ -89,6 +89,9 @@ Effective detection of macromolecular structures in noisy Cryo-ET data
 
 Post-processing with k-d trees enhances spatial accuracy
 
+![image](https://github.com/user-attachments/assets/f33fad58-7d2c-4a6f-9361-39bfa7ce309f)
+
+
 ## Future Work
 
 Fine-tuning on real Cryo-ET data
