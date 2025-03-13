@@ -20,7 +20,7 @@ The goal is to identify particle centers in tomograms and submit predictions for
 
 ✅ Easy: apo-ferritin, ribosome, virus-like-particle
 
-⚠️ Hard: beta-galactosidase, thyroglobulin
+✅ Hard: beta-galactosidase, thyroglobulin
 
 ❌ Not scored: beta-amylase
 
