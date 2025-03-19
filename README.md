@@ -104,7 +104,7 @@ Improved post-processing for enhanced detection
 # IEEE Report  
 This project follows the IEEE format. You can view the full report here:  
 
-📄 [IEEE Report (PDF)](README.pdf)
+📄 [IEEE Report (PDF)](CV CEP.pdf)
 
 
 
